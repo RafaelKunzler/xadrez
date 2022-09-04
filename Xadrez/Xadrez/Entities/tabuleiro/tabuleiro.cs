@@ -24,7 +24,7 @@ namespace tabuleiro
         {
             return Pecas[linha, coluna];
         }
-        
+
         
         
     }

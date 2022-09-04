@@ -2,21 +2,22 @@
 
 namespace tabuleiro
 {
-    internal class Peca
+    internal abstract class Peca
     {
         public Posicao Posicao { get; set; }
         public Cor Cor { get; protected set; }
         public int QteMovimentos { get; protected set; }
         public Tabuleiro Tab { get; protected set; }
 
-        public Peca(Posicao posicao, Cor cor, int qteMovimentos, Tabuleiro tab)
+        public Peca(Cor cor, Tabuleiro tab)
         {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             QteMovimentos = 0;
             Tab = tab;
         }
 
+        
         void incrementarMovimento()
         {
             QteMovimentos++;
@@ -26,5 +27,12 @@ namespace tabuleiro
         {
             QteMovimentos--;
         }
+
+        public abstract override string ToString();
+       
+        
+        
+            
+        
     }
 }
