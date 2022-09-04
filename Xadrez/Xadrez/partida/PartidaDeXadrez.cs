@@ -28,13 +28,15 @@ namespace partida
         {
             Tab.Pecas[pos.Linha, pos.Coluna] = p;
             p.Posicao = pos;
+            
            
         }
 
         public void colocarPecas()
         {
-            colocarNovaPeca(new Torre(Cor.Branco, Tab), new Posicao(1, 1));
-            colocarNovaPeca(new Torre(Cor.Branco, Tab), new Posicao(2, 4));
+            colocarNovaPeca(new Torre(Cor.Branco, Tab), Posicao.ToPosicao("e3"));
+            colocarNovaPeca(new Torre(Cor.Branco, Tab), Posicao.ToPosicao("e5"));
+
         }
 
     }

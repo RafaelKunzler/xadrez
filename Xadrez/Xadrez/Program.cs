@@ -10,8 +10,10 @@ namespace Xadrez
             
             PartidaDeXadrez partida = new PartidaDeXadrez();
             Tela.imprimirTabuleiro(partida.Tab);
-            
-            
+
+
+           
+
 
         }
     }
