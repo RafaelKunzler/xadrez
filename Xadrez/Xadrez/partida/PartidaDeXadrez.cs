@@ -36,6 +36,9 @@ namespace partida
         {
             colocarNovaPeca(new Torre(Cor.Branco, Tab), Posicao.ToPosicao("e3"));
             colocarNovaPeca(new Torre(Cor.Branco, Tab), Posicao.ToPosicao("e5"));
+            colocarNovaPeca(new Rei(Cor.Branco, Tab), Posicao.ToPosicao("h2"));
+
+
 
         }
 
